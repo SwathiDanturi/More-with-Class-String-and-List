@@ -41,3 +41,21 @@
     - if both are same words then `return` the `index`
     - else increment the `index` by 1
 - return `None` (if flow of execution is out of the loop then it means, element is not found and return inside the loop is not executed)
+
+### Design of `my_pop()` core function
+- define `my_pop()` method and `self` is the current instance of the class `Sentence`
+- `index`, a word at the index `index` is to be found in the list is the parameter passed by the calling function 
+- `self.sentence` is an instance variable of the class `Sentence` and is initialized to a string in the constructor, which is passed as an argument when the class instance is created
+- call the method `my_split()` to split `self.sentence` and the result list will be stored in `self.words` (this is the functionality of `my_split()`)
+- to a new variable called `words_length` assign the length of the `self.words` using `len()`
+- if the value of `index` is positive and greater than or equal to `words_length` then:
+    - `return` `None`, this is `Index out of bound`
+- else if the value of `index` is negative and the difference of `words_length` and the `index` is greater than 2 times `words_length` length then:
+    - this is also a case of `Index out of bound` so `return None`
+- if the above two conditions fail then it implies that the `index` is a legal index
+- if `index` is negative then:
+    - add the `words_length` to the index value, this makes it easy to retrieve the element
+- now store the value of `self.words[index]` in a string variable `word_at_index`
+- update `self.words` to remove the element at `index` using following code:
+    - using list `slicing`, assign values of `self.words` from index position 0 to the `index` and `index+1` till the last to `self.words`
+- return the value `word_at_index`
