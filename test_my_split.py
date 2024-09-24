@@ -12,7 +12,7 @@ from sentence import Sentence
 
 def test_my_split_chars_digits():
     """
-    Test sentence that has characters and digits
+    Test string that has characters and digits
     """
     test_string = 'COMP 801.M1 ICP Fall 2024!!'
     sentence_obj = Sentence(test_string)
@@ -23,7 +23,7 @@ def test_my_split_chars_digits():
 
 def test_my_split_extra_spaces():
     """
-    Test sentence that has extra spaces
+    Test string that has extra spaces
     """
     test_string = '  Split function   returns a list       '
     sentence_obj = Sentence(test_string)
@@ -34,7 +34,7 @@ def test_my_split_extra_spaces():
 
 def test_my_split_one_word():
     """
-    Test sentence that has only one word
+    Test string that has only one word
     """
     test_string = 'Oneword'
     sentence_obj = Sentence(test_string)
@@ -45,7 +45,7 @@ def test_my_split_one_word():
 
 def test_my_split_empty_string():
     """
-    Test sentence that is an empty string
+    Test string that is an empty string
     """
     test_string = ''
     sentence_obj = Sentence(test_string)

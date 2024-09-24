@@ -12,7 +12,7 @@ from sentence import Sentence
 
 def test_my_join_chars_digits():
     """
-    Test sentence that has characters and digits
+    Test string that has characters and digits
     """
     sentence_obj = Sentence('Branch is ahead of 4 commits')
     expected = 'Branch is ahead of 4 commits'
@@ -21,7 +21,7 @@ def test_my_join_chars_digits():
 
 def test_my_join_extra_spaces():
     """
-    Test sentence that has extra spaces
+    Test string that has extra spaces
     """
     sentence_obj = Sentence(' my_join method    implementaion   ')
     expected = 'my_join method implementation'
@@ -30,7 +30,7 @@ def test_my_join_extra_spaces():
 
 def test_my_join_one_word():
     """
-    Test sentence that has only one word
+    Test string that has only one word
     """
     sentence_obj = Sentence('A_Word')
     expected = 'A_Word'
@@ -39,7 +39,7 @@ def test_my_join_one_word():
 
 def test_my_join_empty_string():
     """
-    Test sentence that is an empty string
+    Test string that is an empty string
     """
     sentence_obj = Sentence('')
     expected = ''
