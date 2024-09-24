@@ -16,7 +16,7 @@ def test_my_split_chars_digits():
     """
     test_string = 'COMP 801.M1 ICP Fall 2024!!'
     sentence_obj = Sentence(test_string)
-    expected = ['COMP','801.M1','ICP','Fall','2024!!']
+    expected = ['COMP', '801.M1', 'ICP', 'Fall', '2024!!']
     sentence_obj.my_split()
     actual = sentence_obj.words
     assert actual == expected
@@ -27,7 +27,7 @@ def test_my_split_extra_spaces():
     """
     test_string = '  Split function   returns a list       '
     sentence_obj = Sentence(test_string)
-    expected = ['Split','function','returns','a','list']
+    expected = ['Split', 'function', 'returns', 'a', 'list']
     sentence_obj.my_split()
     actual = sentence_obj.words
     assert actual == expected
@@ -49,7 +49,7 @@ def test_my_split_empty_string():
     """
     test_string = ''
     sentence_obj = Sentence(test_string)
-    expected = ['']
+    expected = []
     sentence_obj.my_split()
     actual = sentence_obj.words
     assert actual == expected
