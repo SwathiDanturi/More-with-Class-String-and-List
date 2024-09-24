@@ -1,8 +1,8 @@
 """
 File: client.py
 Initial developers: COMP 801 instructors
-Developer:
-Date:
+Developer: Swathi Danturi
+Date:09/23/2024
 """
 from sentence import Sentence
 
