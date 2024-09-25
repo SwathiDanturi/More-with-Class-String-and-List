@@ -1,18 +1,18 @@
-*** File**: Design.md
-*** Design for all the sentence methods ***
-*** Created**: September 2024
-*** Developer**: Swathi Danturi
-*** Date**: 9/23/2024
+**File**: Design.md <br>
+**Design for all the sentence methods** <br>
+**Created**: September 2024 <br>
+**Developer**: Swathi Danturi <br>
+**Date**: 9/23/2024
 
 ### Design of `my_split()` core function
 - define `my_split()` method and `self` is the current instance of the class `Sentence`
 - `self.sentence` is an instance variable of the class `Sentence` and is initialized to a string in the constructor, which is passed as an argument when the class instance is created
 - use the instance variable `self.words` as an accumulator to store the list of words from string split
-- declare `a_word` an accumulator to store the words from `self.sentence` and initialize it to an empty string
+- declare `a_word` an accumulator of type string to store each word from `self.sentence` and initialize it to an empty string
 - `for` each character `char` in `self.sentence`, iterate through the following statements:
     - check if `char` is space `' '`
     - if `char` is not a space then:
-        - add `char` to the `a_word`, an accumulator of type string to store the characters
+        - add `char` to the `a_word`
     - else:
         - if `a_word` is not empty then:
             - append `a_word` to `self.words`
@@ -50,7 +50,7 @@
 - to a new variable called `words_length` assign the length of the `self.words` using `len()`
 - if the value of `index` is positive and greater than or equal to `words_length` then:
     - `return` `None`, this is `Index out of bound`
-- else if the value of `index` is negative and the difference of `words_length` and the `index` is greater than 2 times `words_length` length then:
+- else if the value of `index` is negative and the difference of `words_length` and the `index` is greater than 2 times `words_length` then:
     - this is also a case of `Index out of bound` so `return None`
 - if the above two conditions fail then it implies that the `index` is a legal index
 - if `index` is negative then:

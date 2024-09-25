@@ -1,6 +1,7 @@
 """
 More practice with class, str, and list concepts.
 Initial developers: COMP 801 instructors
+File: sentence.py
 Updated: Sep 18, 2024
 Developer: Swathi Danturi
 Date:09/23/2024
