@@ -6,7 +6,7 @@ Developer: Swathi Danturi
 Date: 9/23/2024
 """
 
-import pytest  # noqa: F401
+import pytest
 
 from sentence import Sentence
 
@@ -49,3 +49,6 @@ def test_my_pop_not_legal_negative_index():
     actual = sentence_obj.my_pop(-9)
     expected = None
     assert actual == expected
+
+
+pytest.main()

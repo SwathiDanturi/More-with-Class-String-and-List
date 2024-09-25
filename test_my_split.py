@@ -6,7 +6,7 @@ Developer: Swathi Danturi
 Date: 9/23/2024
 """
 
-import pytest  # noqa: F401
+import pytest
 
 from sentence import Sentence
 
@@ -57,3 +57,6 @@ def test_my_split_empty_string():
     sentence_obj.my_split()
     actual = sentence_obj.words
     assert actual == expected
+
+
+pytest.main()

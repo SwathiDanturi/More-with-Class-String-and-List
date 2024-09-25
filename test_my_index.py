@@ -29,3 +29,6 @@ def test_my_index_word_notfound():
     actual = sentence_obj.my_index('New')
     expected = None
     assert actual == expected
+
+
+pytest.main()

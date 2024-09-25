@@ -49,3 +49,6 @@ def test_my_join_empty_string():
     expected = ''
     actual = sentence_obj.my_join()
     assert actual == expected
+
+
+pytest.main()
