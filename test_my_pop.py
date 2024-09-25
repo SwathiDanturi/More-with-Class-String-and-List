@@ -6,9 +6,10 @@ Developer: Swathi Danturi
 Date: 9/23/2024
 """
 
-import pytest
+import pytest  # noqa: F401
 
 from sentence import Sentence
+
 
 def test_my_pop_legal_index():
     """
@@ -19,6 +20,7 @@ def test_my_pop_legal_index():
     expected = 'Assignment'
     assert actual == expected
 
+
 def test_my_pop_not_legal_index():
     """
     Test string with a not valid index
@@ -28,6 +30,7 @@ def test_my_pop_not_legal_index():
     expected = None
     assert actual == expected
 
+
 def test_my_pop_legal_negative_index():
     """
     Test string with a valid negative index
@@ -36,6 +39,7 @@ def test_my_pop_legal_negative_index():
     actual = sentence_obj.my_pop(-4)
     expected = 'Assignment'
     assert actual == expected
+
 
 def test_my_pop_not_legal_negative_index():
     """

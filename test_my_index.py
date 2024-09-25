@@ -6,9 +6,10 @@ Developer: Swathi Danturi
 Date: 9/23/2024
 """
 
-import pytest
+import pytest  # noqa: F401
 
 from sentence import Sentence
+
 
 def test_my_index_word_found():
     """
@@ -18,6 +19,7 @@ def test_my_index_word_found():
     actual = sentence_obj.my_index('New')
     expected = 2
     assert actual == expected
+
 
 def test_my_index_word_notfound():
     """

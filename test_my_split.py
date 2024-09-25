@@ -6,9 +6,10 @@ Developer: Swathi Danturi
 Date: 9/23/2024
 """
 
-import pytest
+import pytest  # noqa: F401
 
 from sentence import Sentence
+
 
 def test_my_split_chars_digits():
     """
@@ -21,6 +22,7 @@ def test_my_split_chars_digits():
     actual = sentence_obj.words
     assert actual == expected
 
+
 def test_my_split_extra_spaces():
     """
     Test string that has extra spaces
@@ -32,6 +34,7 @@ def test_my_split_extra_spaces():
     actual = sentence_obj.words
     assert actual == expected
 
+
 def test_my_split_one_word():
     """
     Test string that has only one word
@@ -42,6 +45,7 @@ def test_my_split_one_word():
     sentence_obj.my_split()
     actual = sentence_obj.words
     assert actual == expected
+
 
 def test_my_split_empty_string():
     """

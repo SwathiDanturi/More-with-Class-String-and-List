@@ -6,9 +6,10 @@ Developer: Swathi Danturi
 Date: 9/23/2024
 """
 
-import pytest
+import pytest  # noqa: F401
 
 from sentence import Sentence
+
 
 def test_my_join_chars_digits():
     """
@@ -19,6 +20,7 @@ def test_my_join_chars_digits():
     actual = sentence_obj.my_join()
     assert actual == expected
 
+
 def test_my_join_extra_spaces():
     """
     Test string that has extra spaces
@@ -28,6 +30,7 @@ def test_my_join_extra_spaces():
     actual = sentence_obj.my_join()
     assert actual == expected
 
+
 def test_my_join_one_word():
     """
     Test string that has only one word
@@ -36,6 +39,7 @@ def test_my_join_one_word():
     expected = 'A_Word'
     actual = sentence_obj.my_join()
     assert actual == expected
+
 
 def test_my_join_empty_string():
     """
