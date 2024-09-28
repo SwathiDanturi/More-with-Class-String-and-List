@@ -20,6 +20,11 @@ def main():
     print(s_obj.sentence)
     print(s_obj.words)
     print(new_sentence)
+    s_obj = Sentence('just checking')
+    word_index = s_obj.my_index('checking')
+    print(s_obj.sentence)
+    print(s_obj.words)
+    print(word_index)
 
 
 main()

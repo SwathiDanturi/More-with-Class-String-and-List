@@ -6,7 +6,7 @@ Developer: Swathi Danturi
 Date: 9/23/2024
 """
 
-import pytest  # noqa: F401
+import pytest
 
 from sentence import Sentence
 
