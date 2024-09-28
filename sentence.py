@@ -98,3 +98,15 @@ class Sentence:
         `self.words`.
         - Do NOT use `pop()` method.
         """
+        self.my_split()
+        words_length = len(self.words)
+        if index >= 0 and index >= words_length:
+            return None
+        elif words_length - index > 2 * words_length:
+            return None
+
+        if index < 0:
+            index += words_length
+        word_at_index = self.words[index]
+        self.words = self.words[:index] + self.words[index + 1:]
+        return word_at_index
