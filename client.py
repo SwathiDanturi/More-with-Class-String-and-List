@@ -11,7 +11,8 @@ def main():
     """
     Check functionality of `Sentence` class.
     """
-    s_obj = Sentence('just chekcing')
+    s_obj = Sentence('just checking')
+    s_obj.my_split()
     print(s_obj.sentence)
     print(s_obj.words)
 

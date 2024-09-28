@@ -32,6 +32,16 @@ class Sentence:
         Implementation requirement:
         - Do NOT use `split() method.
         """
+        a_word = ''
+        for char in self.sentence:
+            if char != ' ':
+                a_word = a_word + char
+            else:
+                if a_word != '':
+                    self.words.append(a_word)
+                    a_word = ''
+        if a_word != '':
+            self.words.append(a_word)
 
     def my_join(self):
         """
