@@ -56,6 +56,13 @@ class Sentence:
 
         :return: string
         """
+        self.my_split()
+        new_sentence = ''
+        for word in self.words:
+            new_sentence += word
+            if word != self.words[-1]:
+                new_sentence = new_sentence+' '
+        return new_sentence
 
     def my_index(self, a_word):
         """

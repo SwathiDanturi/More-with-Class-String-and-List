@@ -25,7 +25,7 @@ def test_my_join_extra_spaces():
     """
     Test string that has extra spaces
     """
-    sentence_obj = Sentence(' my_join method    implementaion   ')
+    sentence_obj = Sentence(' my_join method    implementation   ')
     expected = 'my_join method implementation'
     actual = sentence_obj.my_join()
     assert actual == expected

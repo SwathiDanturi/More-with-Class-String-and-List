@@ -15,6 +15,11 @@ def main():
     s_obj.my_split()
     print(s_obj.sentence)
     print(s_obj.words)
+    s_obj = Sentence('just checking')
+    new_sentence = s_obj.my_join()
+    print(s_obj.sentence)
+    print(s_obj.words)
+    print(new_sentence)
 
 
 main()
